@@ -42,11 +42,11 @@ public class FinanceManagerController {
                     if (transactionData.length == 4) {
                         double amount = Double.parseDouble(transactionData[0]);
                         String category = transactionData[1];
-                        // Parse date and description similarly
+
                         Transaction transaction = new Transaction();
                         transaction.setAmount(amount);
                         transaction.setCategory(category);
-                        // Set date and description attributes similarly
+
                         transactions.add(transaction);
                     }
                 }
